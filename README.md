@@ -1,52 +1,53 @@
-# IOT
-## Cloning the library  
-Use the below command to clome the library 
-```bash
-git clone https://github.com/AditShah1234/IOT.git
-```
-If you already have the files you can skip the above step
+📌 Overview
 
-## OS Installation
+This project is an IoT-based system that collects data from sensors and processes it through a client-server architecture. The system supports both Laptop and Raspberry Pi clients and runs a server on Ubuntu OS.
 
-Install Raspberry PI OS using [Link](https://www.raspberrypi.com/software/) flow the steps
+🚀 Cloning the Repository
 
-And the server is made on the ubuntu OS
+Clone the repository using:
 
-## Library installation
+git clone https://github.com/Navaldeep21/IOT-Project.git
+cd IOT-Project
 
-In the code files there are 3 requirement_*.txt which are to be installed on different devices.
+If you already have the files, you can skip this step.
 
-1) If the client is a laptop it have limited functionality to take photo and show as a output. 
+🖥️ Operating System Setup
 
-```bash
-pip3 install requirements_client.txt
-```
-2) If the client is a Raspberry PI then 
+Install Raspberry Pi OS from:
+https://www.raspberrypi.com/software/
 
-```bash
-pip3 install requirements_rpi.txt
-```
-3) To make a local server you need to open the port then on the ubuntu OS
+The server is configured to run on Ubuntu OS.
 
-```bash
-pip3 install requiremnts_server.txt
-```
-## Running the File
+📦 Installing Dependencies
 
-To run client if client is laptop use 
-```bash
-python3 app.py
-```
+The project contains three requirements_*.txt files for different environments.
 
-If client is Raspberry PI
-```bash
-python3 app_rpi.py
-```
-then open 127.0.0.1:2000 which is a local host
+1️⃣ Laptop Client
+  pip install -r requirements_client.txt
+2️⃣ Raspberry Pi Client
+  pip install -r requirements_rpi.txt
+3️⃣ Ubuntu Server
+  pip install -r requirements_server.txt
+▶️ Running the Application
+  Run Laptop Client
+  python3 app.py
+  Run Raspberry Pi Client
+  python3 app_rpi.py
 
-To run server use 
-```bash
+Then open:
+
+http://127.0.0.1:2000
+
+in your browser.
+
+Run Server (Ubuntu)
 python3 server.py
-```
+🛠 Tech Stack
 
+Python
 
+Raspberry Pi
+
+Ubuntu Server
+
+Client-Server Architecture
